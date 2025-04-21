@@ -10,7 +10,7 @@
 
 <body>
     <nav>
-        <h1><span style="color: white;">New</span><span style="color: red;">H</span><span style="color: green;">U</span><span style="color: blue;">E</span></h1>
+        <h1>NewHue</h1>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="project-overview.html">Project Overview</a></li>
@@ -22,12 +22,120 @@
     </nav>
     <main>
         <h2>Heuristic Evaluation</h2>
-        <p>We analyzed our design against Nielsen’s 10 Usability Heuristics. Below are our findings:</p>
+        <p>We conducted a heuristic evaluation with Team Translate Mate (Eddie and Ronnie) of our Figma prototype using
+            Nielsen's 10 Usability Heuristics. Each
+            heuristic was reviewed and scored based on the prototype’s ability to meet the principle. Below is a table
+            summarizing their findings, followed by detailed commentary on each point.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Heuristic</th>
+                    <th>Score (0–5)</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visibility of system status</td>
+                    <td style="text-align: center;">1</td>
+                    <td>No live feedback due to static prototype design. Users don’t receive real-time confirmation of
+                        interactions.</td>
+                </tr>
+                <tr>
+                    <td>Match between system and the real world</td>
+                    <td style="text-align: center;">2</td>
+                    <td>Terminology aligns with user expectations (e.g., colorblind types), and high-contrast black and
+                        white default improves clarity for colorblind users.</td>
+                </tr>
+                <tr>
+                    <td>User control and freedom</td>
+                    <td style="text-align: center;">1</td>
+                    <td>Undo and delete options are present but lack a consistent back button. Users rely on the
+                        browser’s back button instead.</td>
+                </tr>
+                <tr>
+                    <td>Consistency and standards</td>
+                    <td style="text-align: center;">2</td>
+                    <td>Consistent visual styling and naming conventions. Test and manual profile creation options match
+                        platform expectations.</td>
+                </tr>
+                <tr>
+                    <td>Error prevention</td>
+                    <td style="text-align: center;">2</td>
+                    <td>No live validation or error prompts due to static design, but layout encourages safe
+                        adjustments. Suggest adding "Reset" on filter pages.</td>
+                </tr>
+                <tr>
+                    <td>Recognition rather than recall</td>
+                    <td style="text-align: center;">1</td>
+                    <td>Main navigation is persistent. However, multiple profile editing pages cause confusion — should
+                        consolidate into one.</td>
+                </tr>
+                <tr>
+                    <td>Flexibility and efficiency of use</td>
+                    <td style="text-align: center;">1</td>
+                    <td>Expert users may benefit from quick toggles, but novice users may find unlabeled switches
+                        confusing (e.g., green toggle on Home).</td>
+                </tr>
+                <tr>
+                    <td>Aesthetic and minimalist design</td>
+                    <td style="text-align: center;">1</td>
+                    <td>Minimalist overall, but has redundancy (e.g., separate login/register pages, duplicate profile
+                        edit views).</td>
+                </tr>
+                <tr>
+                    <td>Help users recognize, diagnose, and recover from errors</td>
+                    <td style="text-align: center;">2</td>
+                    <td>Prototype lacks dynamic error messaging, but static layout includes clear, supportive cues and
+                        confirmation elements.</td>
+                </tr>
+                <tr>
+                    <td>Help and documentation</td>
+                    <td style="text-align: center;">0</td>
+                    <td>Help Center link present in footer on each page, but no detailed documentation or tutorials
+                        visible in the prototype.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>General Recommendations</h3>
         <ul>
-            <li><strong>Visibility of System Status:</strong> Real-time preview sliders helped improve this.</li>
-            <li><strong>Consistency:</strong> Unified icon and menu placement was enforced.</li>
-            <li><strong>User Control:</strong> Undo and test navigation options were added.</li>
+            <li>Combine <strong>Login</strong> and <strong>Register</strong> pages into one to reduce redundancy.</li>
+            <li>Merge <strong>Home</strong> and <strong>Edit Profile</strong> — both control the same filter settings.
+            </li>
+            <li>Remove <strong>Profiles (With Profiles)</strong> section as only one profile is needed. Eliminate
+                left/right arrows.</li>
+            <li>Standardize toggle button color — use either green or blue, not both.</li>
         </ul>
+
+        <h3>Revisions Made</h3>
+        <p>Below is a table showing visual comparisons of key design revisions made after heuristic evaluation and user
+            feedback:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Change #</th>
+                    <th>Before</th>
+                    <th>After</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">1</td>
+                    <td><img src="img/EditProfile.png" alt="Before screenshot" style="width:100%; max-width:300px;">
+                    </td>
+                    <td><img src="img/EditProfile2.png" alt="After screenshot" style="width:100%; max-width:300px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">2</td>
+                    <td><img src="img/Setup.png" alt="Before screenshot" style="width:100%; max-width:300px;">
+                    </td>
+                    <td><img src="img/Setup2.png" alt="After screenshot" style="width:100%; max-width:300px;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 </body>
 
